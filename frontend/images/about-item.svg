@@ -1,0 +1,16 @@
+<svg width="59" height="58" viewBox="0 0 59 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Icon">
+<circle id="Ellipse 3" cx="29.5" cy="29" r="29" fill="url(#paint0_linear_109_291)"/>
+<path id="Vector" d="M41.5 37.4598V24.5402C41.499 24.3536 41.4512 24.1705 41.3612 24.0095C41.2712 23.8484 41.1423 23.7151 40.9875 23.623L29.9875 17.1369C29.8393 17.0472 29.6711 17 29.5 17C29.3289 17 29.1607 17.0472 29.0125 17.1369L18.0125 23.623C17.8577 23.7151 17.7288 23.8484 17.6388 24.0095C17.5488 24.1705 17.501 24.3536 17.5 24.5402V37.4598C17.501 37.6464 17.5488 37.8295 17.6388 37.9905C17.7288 38.1516 17.8577 38.2849 18.0125 38.377L29.0125 44.8631C29.1607 44.9528 29.3289 45 29.5 45C29.6711 45 29.8393 44.9528 29.9875 44.8631L40.9875 38.377C41.1423 38.2849 41.2712 38.1516 41.3612 37.9905C41.4512 37.8295 41.499 37.6464 41.5 37.4598V37.4598Z" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M35.5 34V27.0995L23.5 20" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_3" d="M41.5 24L29.6138 31L17.5 24" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_4" d="M29.5 31V45" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_109_291" x1="-1.14433" y1="12.5667" x2="71.8201" y2="17.7482" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FFB629"/>
+<stop offset="0.507189" stop-color="#FFDA56"/>
+<stop offset="1" stop-color="#FFD7A6"/>
+</linearGradient>
+</defs>
+</svg>

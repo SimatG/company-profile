@@ -1,0 +1,845 @@
+@import url("https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=League+Spartan:wght@300&display=swap");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.header {
+  background-color: #091242;
+}
+
+.logo-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 120px;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.bar {
+  display: flex;
+}
+.bar .icon-1 {
+  display: flex;
+  align-items: center;
+  padding-right: 39px;
+}
+.bar .icon-1 p {
+  padding-left: 17px;
+  color: #fff;
+  font-family: "Krub";
+  font-size: 14px;
+  line-height: 18px;
+}
+.bar .icon-1 img {
+  width: 63px;
+  height: 63px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(9, 18, 66, 0.25);
+}
+
+.banner-bg .navbar {
+  padding: 0 120px;
+  display: flex;
+}
+
+.banner-bg .navbar li {
+  display: inline-block;
+  padding: 0 30px;
+  border-right: 1.5px solid rgba(255, 255, 255, 0.2);
+}
+
+.banner-bg .navbar li:last-child {
+  border-right: none;
+}
+
+.banner-bg .navbar li:first-child {
+  padding-left: 0;
+}
+
+.banner-bg .navbar a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Krub";
+  font-weight: normal;
+  line-height: 21px;
+}
+
+.navbar .navbar-medsos a {
+  padding-right: 24px;
+}
+
+.navbar-medsos button {
+  padding: 28px 52px;
+  margin-left: 26px;
+  color: #23212A;
+  font-family: "Krub";
+  font-size: 16px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 21px;
+  text-align: center;
+  background-color: #fff;
+  border: none;
+}
+
+.container .banner-bg {
+  height: 100vh;
+  background-image: linear-gradient(90deg, rgb(9, 18, 66), rgba(66, 76, 130, 0.8), rgba(255, 255, 255, 0.4)), url(../images/bg-banner.jpg);
+  background-size: cover;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.banner-content {
+  margin: 0 120px;
+  width: 670px;
+}
+
+.label {
+  margin-top: 30px;
+  display: flex;
+  padding-bottom: 8px;
+}
+
+.label-pattern {
+  background: linear-gradient(94deg, #FFB629 -1.21%, #FFDA56 58.66%, #FFD7A6 116.84%);
+  width: 4px;
+  height: 23px;
+}
+
+.label p {
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  color: #fff;
+  border-right: 5px;
+  background-color: rgba(4, 28, 55, 0.5);
+  padding: 3px 9px;
+}
+
+.banner-content h1 {
+  color: #fff;
+  font-family: "Rubik", sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 6px;
+}
+
+.banner-content .desc {
+  color: #fff;
+  font-family: "Krub", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 25px;
+  margin-bottom: 24px;
+}
+
+.banner-content button {
+  padding: 19px 68px;
+  background: linear-gradient(90deg, rgb(255, 182, 41), rgb(255, 218, 86), rgb(255, 215, 166));
+  border: none;
+  font-family: "Krub";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+  color: #23212A;
+}
+
+.service {
+  margin-top: 100px;
+  padding: 0 120px;
+  display: flex;
+}
+
+h2 {
+  font-family: "Rubik";
+  font-size: 35px;
+  font-weight: 600;
+  line-height: normal;
+  color: #1C1F35;
+}
+
+.content-item {
+  display: flex;
+  margin-left: 33px;
+  justify-content: space-between;
+}
+
+.content-desc {
+  padding-left: 20px;
+}
+
+.content-item .content-desc h3 {
+  color: #1C1F35;
+  font-family: "Rubik";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-bottom: 13px;
+}
+
+.content-item .content-desc p {
+  color: #666C89;
+  font-family: Krub;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  padding-bottom: 70px;
+}
+
+.bg-about {
+  margin-top: 100px;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(9, 18, 56, 0.6)), url(../images/bg-about.png);
+  background-size: cover;
+  width: 100%;
+  height: 504px;
+}
+
+.about {
+  display: flex;
+  background-color: #fff;
+  margin: -160px 120px 0 120px;
+  padding: 80px 56px;
+}
+
+.about-desc .desc {
+  color: #666C89;
+  font-family: "Krub";
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 24px;
+}
+
+.about-img img {
+  width: 500px;
+}
+
+.about-item {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.about-item img {
+  margin-right: 15px;
+}
+
+.about-item p {
+  color: #1C1F35;
+  font-family: "Rubik";
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 24px;
+}
+
+.lulusan {
+  display: flex;
+  margin: 0 120px;
+  justify-content: center;
+  margin-bottom: 70px;
+}
+
+.lulusan-item {
+  display: flex;
+  padding: 46px 106px 38px 81px;
+  border: 1px solid #D4D4D4;
+  align-items: center;
+}
+
+.lulusan-item:first-child {
+  border-left: none;
+}
+
+.lulusan-item:last-child {
+  border-right: none;
+}
+
+.lulusan h1 {
+  color: #1C1F35;
+  font-family: "Rubik";
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.lulusan .point {
+  width: 17px;
+  height: 17px;
+  background: linear-gradient(94deg, #FFB629 -1.21%, #FFDA56 58.66%, #FFD7A6 116.84%);
+  margin: 0 12px;
+}
+
+.lulusan p {
+  color: #1C1F35;
+  font-family: "Rubik";
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.project {
+  background: linear-gradient(white 52%, rgba(255, 182, 41, 0.8) 20%);
+  padding-bottom: 100px;
+}
+.project h2 {
+  text-align: center;
+}
+.project .project-btn {
+  display: flex;
+  margin: 0 120px;
+  justify-content: center;
+}
+.project .project-btn button {
+  border: transparent;
+  background-color: #091242;
+  padding: 18px 70px;
+  font-family: "Krub";
+  font-size: 16px;
+  color: #FFF;
+  font-weight: 600;
+}
+
+.project .project-items {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 40px 0;
+}
+.project .project-items .items {
+  width: 220px;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  padding: 15px 15px;
+}
+.project .project-items .items .title {
+  font-family: "Rubik";
+  font-size: 16px;
+  font-weight: 400;
+  color: #FFF;
+}
+.project .project-items .items .desc {
+  font-family: "Krub";
+  font-size: 12px;
+  color: #FFB629;
+  padding-top: 5px;
+}
+.project .project-items .items-1 {
+  background-image: linear-gradient(0deg, #091242 14.34%, rgba(60, 60, 60, 0) 43.86%), url(../images/project-photo-1.png);
+  background-size: cover;
+}
+.project .project-items .items-2 {
+  background-image: linear-gradient(0deg, #091242 14.34%, rgba(60, 60, 60, 0) 43.86%), url(../images/project-photo-2.png);
+  background-size: cover;
+}
+.project .project-items .items-3 {
+  background-image: linear-gradient(0deg, #091242 14.34%, rgba(60, 60, 60, 0) 43.86%), url(../images/project-photo-3.png);
+  background-size: cover;
+}
+.project .project-items .items-4 {
+  background-image: linear-gradient(0deg, #091242 14.34%, rgba(60, 60, 60, 0) 43.86%), url(../images/project-photo-4.png);
+  background-size: cover;
+}
+.project .project-items .items-5 {
+  background-image: linear-gradient(0deg, #091242 14.34%, rgba(60, 60, 60, 0) 43.86%), url(../images/project-photo-2.png);
+  background-size: cover;
+}
+
+.testimonials {
+  margin: 100px 120px 120px 100px;
+}
+.testimonials .heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.testimonials .heading .btn {
+  padding: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  background-color: #091242;
+  color: #FFF;
+}
+.testimonials .heading .btn:hover {
+  color: black;
+  background: linear-gradient(90deg, rgb(255, 182, 41), rgb(255, 218, 86));
+}
+.testimonials .testi-section {
+  display: flex;
+  justify-content: center;
+}
+.testimonials .testi-section .testi-item {
+  width: 40%;
+  padding: 30px 30px;
+  box-sizing: border-box;
+}
+.testimonials .testi-section .testi-item .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.testimonials .testi-section .testi-item .title .img img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+.testimonials .testi-section .testi-item .title h4 {
+  font-family: "Rubik";
+  font-size: 18px;
+  font-weight: 500;
+  color: #091242;
+  margin-bottom: 7px;
+}
+.testimonials .testi-section .testi-item .title p {
+  font-family: "Krub";
+  font-size: 16px;
+  color: #091242;
+}
+.testimonials .testi-section .testi-item .title .icon {
+  width: 80px;
+  height: 80px;
+  box-sizing: border-box;
+  background-color: #FFB629;
+  font-size: 40px;
+  border-radius: 50%;
+  text-align: center;
+  padding: 20px;
+  color: #091242;
+}
+.testimonials .testi-section .testi-item:nth-child(odd) {
+  background-color: #f4f4f4;
+}
+.testimonials .testi-section .testi-item:nth-child(odd) .desc p {
+  font-family: Krub;
+  font-style: italic;
+  color: #666C89;
+  line-height: 151.523%;
+  font-size: 13px;
+  text-align: justify;
+}
+.testimonials .testi-section .testi-item:nth-child(even) {
+  background-color: #091242;
+}
+.testimonials .testi-section .testi-item:nth-child(even) h4 {
+  font-family: "Rubik";
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 7px;
+}
+.testimonials .testi-section .testi-item:nth-child(even) p {
+  font-family: "Krub";
+  font-size: 16px;
+  color: #fff;
+}
+.testimonials .testi-section .testi-item:nth-child(even) .desc p {
+  font-family: Krub;
+  font-style: italic;
+  color: #fff;
+  line-height: 151.523%;
+  font-size: 13px;
+  text-align: justify;
+}
+
+.promo {
+  display: flex;
+  padding: 100px;
+  background: linear-gradient(90deg, #091242 50%, #f4f4f4 50%);
+}
+.promo .img-promo {
+  width: 55%;
+  background-image: url(../images/promo-bg.jpg);
+  background-size: cover;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.promo .img-promo .small-banner {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(90deg, #FFB629, #FFDA56);
+  width: 50%;
+  padding: 10px;
+}
+.promo .img-promo .small-banner img {
+  width: 65px;
+}
+.promo .img-promo .small-banner p {
+  font-family: "Rubik";
+  color: #091242;
+  line-height: normal;
+  margin-left: 10px;
+}
+.promo .content {
+  width: 45%;
+}
+.promo .content h2 {
+  font-size: 25px;
+}
+.promo .content .desc {
+  font-family: "Krub";
+  font-size: 14px;
+  font-weight: 500;
+  color: #666C89;
+  margin-top: 18px;
+  margin-bottom: 30px;
+  line-height: 151.523%;
+}
+.promo .content .promo-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.promo .content .promo-list .item-list {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-right: 15px;
+}
+.promo .content .promo-list .item-list i {
+  background: linear-gradient(#FFB629, #FFDA56);
+  height: 20px;
+  padding: 15px;
+  border-radius: 50%;
+  text-align: center;
+  margin-right: 10px;
+}
+.promo .content .promo-list .item-list p {
+  font-family: "Rubik";
+  font-size: 20px;
+  font-weight: 400;
+  color: #1C1F35;
+}
+
+.contact {
+  margin-top: 100px;
+  display: flex;
+  background-color: #091242;
+  padding: 80px 120px;
+}
+.contact .contact-desc {
+  width: 35%;
+}
+.contact .contact-desc .label p {
+  background: rgba(232, 232, 232, 0.1);
+}
+.contact .contact-desc h2 {
+  color: white;
+  margin-bottom: 3px;
+}
+.contact .contact-desc .desc {
+  font-family: "Krub";
+  font-size: 16px;
+  line-height: 151.5%;
+  color: #FFF;
+  margin-bottom: 30px;
+}
+.contact .contact-desc .contact-item {
+  display: flex;
+  flex-direction: column;
+}
+.contact .contact-desc .contact-item .item-1 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.contact .contact-desc .contact-item .item-1 p {
+  margin-left: 10px;
+  font-family: "Krub";
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 135.023%;
+}
+.contact .contact-form {
+  align-self: flex-end;
+  margin-left: 5%;
+  width: 60%;
+  box-sizing: border-box;
+}
+.contact .contact-form input {
+  width: 48%;
+  margin-right: 1%;
+  background-color: #091242;
+  box-sizing: border-box;
+  padding: 21px 0 21px 30px;
+  border: 1px solid #4E5683;
+  margin-bottom: 10px;
+  font-family: "League Spartan";
+  font-size: 16px;
+  color: white;
+}
+.contact .contact-form input::-moz-placeholder {
+  color: white;
+}
+.contact .contact-form input::placeholder {
+  color: white;
+}
+.contact .contact-form textarea {
+  width: 98%;
+  background-color: #091242;
+  box-sizing: border-box;
+  padding: 21px 30px 21px 30px;
+  border: 1px solid #4E5683;
+  margin-bottom: 10px;
+  font-family: "League Spartan";
+  font-size: 16px;
+  color: white;
+}
+.contact .contact-form textarea::-moz-placeholder {
+  color: #fff;
+}
+.contact .contact-form textarea::placeholder {
+  color: #fff;
+}
+.contact .contact-form button {
+  padding: 19px 35px;
+  font-family: "Krub";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 135%;
+  color: black;
+  border: none;
+  background: linear-gradient(90deg, #FFB629, #FFDA56);
+}
+
+.blog {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 0;
+}
+.blog .blog-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.blog .blog-content {
+  display: flex;
+  flex-direction: column;
+}
+.blog .blog-content .blog-item {
+  display: flex;
+  border-top: 1px solid #D6D6D6;
+  border-bottom: 1px solid #D6D6D6;
+  padding: 30px 0;
+  margin-bottom: 40px;
+}
+.blog .blog-content .blog-item .blog-banner {
+  width: 45%;
+  background-image: url(../images/blog-photo.png);
+  height: 300px;
+  background-size: cover;
+}
+.blog .blog-content .blog-item .blog-date {
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 0 30px;
+  align-items: center;
+  border-right: 1px solid #D6D6D6;
+}
+.blog .blog-content .blog-item .blog-date h2 {
+  margin-top: 10px;
+}
+.blog .blog-content .blog-item .blog-date p {
+  font-family: "Krub";
+  font-size: 14px;
+  color: #666C89;
+  line-height: 151.5%;
+}
+.blog .blog-content .blog-item .blog-text {
+  width: 45%;
+  padding-top: 10px;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+.blog .blog-content .blog-item .blog-text .title {
+  font-family: "Rubik";
+  font-size: 25px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: #1C1F35;
+}
+.blog .blog-content .blog-item .blog-text .desc {
+  font-family: "Krub";
+  font-family: 16px;
+  line-height: 151.5%;
+  color: #666C89;
+}
+.blog button {
+  font-family: "Krub";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 135%;
+  background-color: #091242;
+  padding: 20px 60px;
+  color: white;
+  border: transparent;
+}
+
+footer {
+  background-image: url(../images/footer-bg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 110vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+footer .footer {
+  background-color: #091242;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 120px;
+}
+footer .footer .footer-col {
+  text-align: center;
+  width: 30%;
+}
+footer .footer .footer-col .topbar {
+  padding: 40px 0;
+  font-family: "Rubik";
+  font-size: 25px;
+  font-weight: 500;
+  color: #fff;
+}
+footer .footer .footer-col .desc {
+  font-family: "Krub";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 151.5%;
+  color: #E8E8E8;
+  margin-bottom: 30px;
+}
+footer .footer .footer-col .contact-item .item-1 {
+  display: flex;
+  align-items: center;
+  padding-bottom: 30px;
+}
+footer .footer .footer-col .contact-item .item-1 img {
+  margin-right: 15px;
+}
+footer .footer .footer-col .contact-item .item-1 p {
+  font-family: "Krub";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 135%;
+  color: #E8E8E8;
+}
+footer .footer .footer-col .footer-link li a {
+  text-decoration: none;
+  color: #E8E8E8;
+  font-family: "Krub";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 250%;
+}
+footer .footer .footer-col input {
+  width: 100%;
+  background-color: #091242;
+  box-sizing: border-box;
+  padding: 21px 0 21px 30px;
+  border: 1px solid #4E5683;
+  margin-bottom: 10px;
+  font-family: "League Spartan";
+  font-size: 16px;
+  color: white;
+}
+footer .footer .footer-col input::-moz-placeholder {
+  color: white;
+}
+footer .footer .footer-col input::placeholder {
+  color: white;
+}
+footer .footer .footer-col button {
+  padding: 19px 35px;
+  font-family: "Krub";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 135%;
+  color: black;
+  border: none;
+  background: linear-gradient(90deg, #FFB629, #FFDA56);
+}
+footer .footer .footer-col:first-child, footer .footer .footer-col:last-child {
+  text-align: start;
+}
+footer .copy {
+  background-color: #091242;
+  border-top: 2px solid #4E5683;
+  padding: 15px 120px;
+}
+footer .copy p {
+  font-family: "Krub";
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+}/*# sourceMappingURL=main.css.map */
