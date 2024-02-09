@@ -60,9 +60,12 @@ table {
 .logo-header {
   display: flex;
   justify-content: space-between;
-  padding: 20px 120px;
+  padding: 0 120px;
   box-sizing: border-box;
   align-items: center;
+}
+.logo-header .logo {
+  max-width: 100px;
 }
 
 .bar {
@@ -666,85 +669,6 @@ h2 {
   background: linear-gradient(90deg, #FFB629, #FFDA56);
 }
 
-.blog {
-  background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 100px 0;
-}
-.blog .blog-heading {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 30px;
-}
-.blog .blog-content {
-  display: flex;
-  flex-direction: column;
-}
-.blog .blog-content .blog-item {
-  display: flex;
-  border-top: 1px solid #D6D6D6;
-  border-bottom: 1px solid #D6D6D6;
-  padding: 30px 0;
-  margin-bottom: 40px;
-}
-.blog .blog-content .blog-item .blog-banner {
-  width: 45%;
-  background-image: url(../images/blog-photo.png);
-  height: 300px;
-  background-size: cover;
-}
-.blog .blog-content .blog-item .blog-date {
-  width: 10%;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-  padding: 0 30px;
-  align-items: center;
-  border-right: 1px solid #D6D6D6;
-}
-.blog .blog-content .blog-item .blog-date h2 {
-  margin-top: 10px;
-}
-.blog .blog-content .blog-item .blog-date p {
-  font-family: "Krub";
-  font-size: 14px;
-  color: #666C89;
-  line-height: 151.5%;
-}
-.blog .blog-content .blog-item .blog-text {
-  width: 45%;
-  padding-top: 10px;
-  padding-left: 20px;
-  box-sizing: border-box;
-}
-.blog .blog-content .blog-item .blog-text .title {
-  font-family: "Rubik";
-  font-size: 25px;
-  font-weight: 400;
-  margin-bottom: 20px;
-  color: #1C1F35;
-}
-.blog .blog-content .blog-item .blog-text .desc {
-  font-family: "Krub";
-  font-family: 16px;
-  line-height: 151.5%;
-  color: #666C89;
-}
-.blog button {
-  font-family: "Krub";
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 135%;
-  background-color: #091242;
-  padding: 20px 60px;
-  color: white;
-  border: transparent;
-}
-
 footer {
   background-image: url(../images/footer-bg.png);
   background-size: contain;
@@ -763,6 +687,9 @@ footer .footer {
 footer .footer .footer-col {
   text-align: center;
   width: 30%;
+}
+footer .footer .footer-col .logo-aic {
+  max-width: 100px;
 }
 footer .footer .footer-col .topbar {
   padding: 40px 0;
@@ -842,4 +769,5 @@ footer .copy p {
   font-size: 16px;
   font-weight: 500;
   color: #fff;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */

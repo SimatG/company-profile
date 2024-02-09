@@ -236,9 +236,9 @@ button {
 	}
 }
 
-.about {
+.about-content {
 	display: flex;
-	margin: 100px 120px 100px 80px;
+	margin: 100px 120px 50px 80px;
 
 	.about-banner {
 		img {
@@ -253,19 +253,93 @@ button {
 			margin-bottom: 10px;
 		}
 
-		.visi-misi {
-			display: flex;
-			justify-content: space-between;
-
-			button {
-				border: transparent;
-				padding: 15px 40px 15px 40px;
-				margin-bottom: 20px;
-			}
+		p {
+			text-align: justify;
 		}
 
 	}
 }
+
+.visi-misi-main {
+	padding: 0 7rem;
+	margin: auto;
+	margin-bottom: 7rem;
+}
+
+.tabs {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto 20px;
+	border-radius: 10px 10px 0 0;
+}
+
+.radiotab {
+	position: absolute;
+	opacity: 0;
+	
+}
+
+.tab-label {
+	width: 100%;
+	padding: 22px 20px;
+	background: #e5e5e5;
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 23px;
+	color: #7f7f7f;
+	transition: background .3s, color .3s;
+	border: none;
+	border-radius: 0;
+	text-align: center;
+	box-sizing: border-box;
+	font-family: 'Rubik';
+}
+
+.tab-label:hover {
+	background: #d8d8d8;
+}
+
+.tab-label:active {
+	background: #ccc;
+}
+
+.radiotab:checked + .tab-label {
+	background: #091242;
+	color: #fff;
+	border-top: solid 2px #000;
+	border-left: solid 2px #000;
+	border-right: solid 2px #000;
+	border-bottom: none;
+}
+
+.panel {
+	display: none;
+	padding: 20px 30px 30px;
+	background: #fff;
+	width: 100%;
+	border-left: solid 2px #000;
+	border-bottom: solid 2px #000;
+	border-right: solid 2px #000;
+
+	p {
+		font-family: 'Krub';
+		line-height: 1.5rem;
+	}
+
+	ul {
+		list-style-type: disc;
+		font-family: 'Krub';
+		line-height: 1.5rem;
+		text-align: justify;
+	}
+
+}
+
+.radiotab:checked + .tab-label + .panel {
+	display: block;
+}
+
+
 
 .service {
 	display: flex;
@@ -499,4 +573,18 @@ footer {
         }
     }
 
+}
+
+
+@media (min-width: 600px) {
+	.panel {
+		order: 99;
+	}
+
+	.tab-label {
+		width: 33.33%;
+
+		border-radius: 10px 10px 0 0;
+		border-bottom: solid 2px #000;
+	}
 }
