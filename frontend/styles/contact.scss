@@ -268,7 +268,7 @@ button {
     .contact-item {
         display: flex;
         width: 100%;
-        justify-content: space-between;
+        justify-content: space-evenly;
         margin-bottom: 50px;
         .item {
             display: flex;
@@ -284,6 +284,7 @@ button {
                 font-size: 14px;
                 line-height: 135%;
                 font-weight: 500;
+                text-align: center;
             }
         }
     }

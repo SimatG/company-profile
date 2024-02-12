@@ -333,6 +333,8 @@ button {
 }
 .pricing h2 {
   margin-bottom: 50px;
+  text-align: center;
+  line-height: 120%;
 }
 .pricing .pricing-item {
   display: flex;
